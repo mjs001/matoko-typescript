@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "typescript_notes_backend": {
+      "main": "src/typescript_notes_backend/main.mo",
+      "type": "motoko"
+    },
+    "typescript_notes_frontend": {
+      "dependencies": [
+        "typescript_notes_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/typescript_notes_frontend/src/index.html"
+      },
+      "source": [
+        "src/typescript_notes_frontend/assets",
+        "dist/typescript_notes_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
